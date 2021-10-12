@@ -20,6 +20,7 @@ jobs:
   deploy:
     name: Deploy to GH Pages
     runs-on: ubuntu-20.04
+    needs: [verify]
     steps:
       - uses: actions/checkout@v2
         name: Checkout
