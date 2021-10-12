@@ -1,6 +1,6 @@
 module.exports = {
     mount: {
-        public: {url: '/', static: true},
+        public: {url: '/'},
         src: {url: '/dist'}
     },
     plugins: [
@@ -12,5 +12,8 @@ module.exports = {
     ],
     optimize: {
         bundle: true
+    },
+    buildOptions: {
+        baseUrl: '/fun-focused-coaching'
     }
 }
